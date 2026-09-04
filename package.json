@@ -1,0 +1,37 @@
+{
+  "name": "aluminium",
+  "version": "1.0.0",
+  "description": "Middleware to stop AI bots. Uses the NAI tag and Proof-of-Work.",
+  "homepage": "https://github.com/koubaki/aluminium#readme",
+  "bugs": {
+    "url": "https://github.com/koubaki/aluminium/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koubaki/aluminium.git"
+  },
+  "license": "LGPL-3.0-or-later",
+  "author": "koubaki",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "concurrently \"tsc --watch\" \"nodemon --watch .env --exec \\\"node --env-file=.env\\\" dist/index.js\"",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "http-proxy-middleware": "^4.2.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
