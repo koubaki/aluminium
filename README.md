@@ -58,4 +58,4 @@ npm run watch # Updates when .env or the code changes
 
 ## License
 
-Please see [LICENSE](LICENSE) for more information.
+This project is licensed under the GNU Lesser General Public License v3.0 or any later version. Please see [LICENSE](LICENSE) and [LICENSE.LESSER](LICENSE.LESSER) for more information. Copyright 2026 AI Usage Coalition (AIUCA).
